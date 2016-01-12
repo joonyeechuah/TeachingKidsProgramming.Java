@@ -23,6 +23,7 @@ public class SimpleSquare
       //
       //  (Optional): Sign your work using the Virtual Proctor 
       //  See your work at http://virtualproctor.tkpjava.org
+      // a tiny change
     }
   }
 }
