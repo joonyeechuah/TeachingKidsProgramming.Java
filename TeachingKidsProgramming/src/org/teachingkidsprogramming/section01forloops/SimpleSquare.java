@@ -20,7 +20,6 @@ public class SimpleSquare
       //      Turn the tortoise to the right (90 degrees) --#3
       Tortoise.turn(90);
     }
-    // one small change
     //  Repeat --#5.2
     //  (Optional): Sign your work using the Virtual Proctor 
     //  See your work at http://virtualproctor.tkpjava.org
