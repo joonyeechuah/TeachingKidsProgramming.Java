@@ -28,7 +28,7 @@ public class DoubleLoop
       //         Move the tortoise 4 times the current line number you are drawing --#4
       Tortoise.move(i * 4);
       //         Turn the tortoise 1/6 of 360 degrees to the left --#2
-      Tortoise.turn(360 / 6);
+      Tortoise.turn(360 / -6);
       // 
       //         Do the following 15 times --(HINT: The new line number is j) --#7.1
       for (int j = 0; j < 15; j++)
