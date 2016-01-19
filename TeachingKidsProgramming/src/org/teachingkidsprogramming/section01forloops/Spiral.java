@@ -29,7 +29,7 @@ public class Spiral
         //         Move the tortoise 5 times the current line number you are drawing --#5
         Tortoise.move(i * 5);
         //         Turn the tortoise 1/3 of 360 degrees to the right --#2
-        Tortoise.turn(120);
+        Tortoise.turn(125);
       }
       catch (RuntimeException re)
       {
