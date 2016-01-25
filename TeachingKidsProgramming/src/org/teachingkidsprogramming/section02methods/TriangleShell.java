@@ -1,6 +1,7 @@
 package org.teachingkidsprogramming.section02methods;
 
 import org.teachingextensions.logo.Tortoise;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
 @SuppressWarnings("unused")
 public class TriangleShell
@@ -12,15 +13,22 @@ public class TriangleShell
     Tortoise.show();
     int currentLength = 50;
     // Make the tortoise go as fast as possible --#6
+    Tortoise.setSpeed(10);
     // Do the following 60 times --#7.1
-    //      Change the pen color of the line the tortoise draws to a random color --#9
-    //      Increase the current length of the side by 4 pixels --#8
-    //      drawTriangle (recipe below) --#5.1
-    //
-    drawTriangle(currentLength);
-    //
-    //      Turn the tortoise 1/60th of 360 degrees to the right --#10
-    // Repeat --#7.2
+    for (int i = 0; i < 60; i++)
+    {
+      //      Change the pen color of the line the tortoise draws to a random color --#9
+      Tortoise.setPenColor(PenColors.getRandomColor());
+      //      Increase the current length of the side by 4 pixels --#8
+      currentLength = currentLength + 4;
+      //      drawTriangle (recipe below) --#5.1
+      //
+      drawTriangle(currentLength);
+      //
+      //      Turn the tortoise 1/60th of 360 degrees to the right --#10
+      Tortoise.turn(360 / 60);
+      // Repeat --#7.2
+    }
   }
   private static void drawTriangle(int currentLength)
   {
