@@ -26,26 +26,19 @@ public class HousesQuiz extends HousesQuizAdapter
     //   ------------- Recipe for large 
     //      set the current length to 63
     large();
-    //   ------------- End of large recipe
-    //
-    //   Question4
-    //   moveTheLength (recipe below) 
-    //   ------------- Recipe for moveTheLength 
-    //      move the Tortoise the current length
-    moveTheLength();
-    //   ------------- End of moveTheLength recipe
-    //
-    //   Question5
-    //   turnTheCorner (recipe below) 
-    //   ------------- Recipe for turnTheCorner 
-    //      turn the Tortoise 1/3 of 360 degrees to the left
-    turnTheCorner();
+    drawASide();
     //   ------------- End of turnTheCorner recipe
     //
     //   Question6
     //   drawASide (recipe below) 
+    drawASide();
+  }
+  private void drawASide()
+  {
     //   ------------- Recipe for drawASide 
     //      call moveTheLength and turnTheCorner
+    moveTheLength();
+    turnTheCorner();
     //   ------------- End of drawASide recipe
   }
   private void turnTheCorner()
