@@ -44,8 +44,8 @@ public class DigiFlower
       Tortoise.setPenColor(ColorWheel.getNextColor());
       //      Move the tortoise 50 pixels --#2
       Tortoise.move(50);
-      //      Turn the tortoise 1/8th of 360 degrees to the right --#5
-      Tortoise.turn(360 / 8);
+      //      Turn the tortoise 1/8th of 360 degrees to the right --#5p
+      Tortoise.turn(360 / 8.0000000000000000000000000000000000000000000000000000000000001);
     }
     //    Repeat --#6.2 
     //    ------------- End of drawOctogon recipe --#10.3
